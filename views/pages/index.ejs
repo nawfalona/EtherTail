@@ -31,7 +31,19 @@
    </div>
 </div>
 <script src="https://visitorshitcounter.com/js/badgess.js?v=1592850758"></script>
+<br><br><br>
 
+<ods-dataset-context context="registregarantiescapacite" registregarantiescapacite-dataset="registre-garanties-capacite" registregarantiescapacite-parameters="{'disjunctive.type':true,'disjunctive.statut':true,'fbclid':'IwAR2gNAx6XFpMxfzx7UMFt8BZTypfNgEGrE2eg_4a5jliNOsrSP5WkbnSI0U','sort':'-date_saisie'}">
+    <ods-chart align-month="true">
+        <ods-chart-query context="registregarantiescapacite" field-x="annee_livraison" maxpoints="0" timescale="year" stacked="normal" series-breakdown="statut">
+            <ods-chart-serie expression-y="quantite" chart-type="column" function-y="SUM" color="range-custom" scientific-display="true">
+            </ods-chart-serie>
+            <ods-chart-serie expression-y="quantite" chart-type="line" function-y="AVG" color="range-Dark2" scientific-display="true">
+            </ods-chart-serie>
+        </ods-chart-query>
+    </ods-chart>
+
+</ods-dataset-context>
 
 </body>
 </html>
